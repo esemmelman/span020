@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Extra-large Spanish and English vocabulary flashcards for Días inolvidables.">
+<title>Spanish Flashcards · Días inolvidables</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f2eb;color:#193c35;font-family:system-ui,sans-serif}main{max-width:1200px;margin:auto;padding:32px 24px;min-height:100svh;display:flex;flex-direction:column;gap:20px}header{display:flex;align-items:center;justify-content:space-between;gap:16px}h1{font-size:20px;margin:0}header p{margin:6px 0 0;color:#586b64;font-size:14px}#count{white-space:nowrap;font-variant-numeric:tabular-nums}.card{flex:1;min-height:55svh;width:100%;border:1px solid #d3dcd1;border-radius:28px;background:#fffef9;color:inherit;padding:40px 24px;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between;align-items:center;box-shadow:0 12px 40px #193c3509}.label{text-transform:uppercase;letter-spacing:.18em;font-size:13px;color:#68776b}.word{font-size:clamp(52px,8.5vw,118px);font-weight:650;line-height:1.15;overflow-wrap:anywhere;max-width:100%;text-align:center;margin:40px 0}.hint{font-size:15px;color:#68776b}.card.english{background:#e4eee5}.navigation{display:grid;grid-template-columns:1fr 1fr;gap:16px}.navigation button{border:0;border-radius:16px;padding:22px;font:600 22px system-ui;cursor:pointer;background:#193c35;color:white}.navigation button:first-child{background:#e0e5dc;color:#193c35}button:focus-visible{outline:4px solid #c77c2e;outline-offset:4px}footer{text-align:center;color:#68776b;font-size:13px} @media(max-width:500px){main{padding:20px 14px;gap:14px}h1{font-size:17px}.card{padding:28px 16px}.word{font-size:clamp(44px,11vw,75px)}.navigation button{padding:20px 10px}}
+</style>
+</head>
+<body><main>
+<header><div><h1>Días inolvidables</h1><p>Spanish vocabulary · Chapter 1</p></div><span id="count"></span></header>
+<button class="card" id="card" aria-label="Flip vocabulary card"><span class="label" id="language">Español</span><span class="word" id="word" lang="es" aria-live="polite"></span><span class="hint" id="hint">Click to reveal English</span></button>
+<nav class="navigation" aria-label="Flashcards"><button id="back">← Back</button><button id="next">Next →</button></nav>
+<footer>Click the card or press Space to flip · Use ← → to move</footer>
+</main><script src="app.js"></script></body>
+</html>
